@@ -11,4 +11,4 @@ FROM uber/prototool
 
 COPY --from=builder /usr/local/bin /usr/local/bin
 
-RUN apk add --update --no-cache build-base curl jq && rm -rf /var/cache/apk/*
+RUN apk add --update --no-cache build-base curl jq openssh-client && rm -rf /var/cache/apk/*
